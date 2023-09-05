@@ -1,0 +1,2 @@
+1) Faire le CSS général
+ => Regarder la page Design System. Cela inclut les polices d'écriture,s les couleurs, le menu de navigation 

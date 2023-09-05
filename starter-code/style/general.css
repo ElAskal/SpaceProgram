@@ -1,0 +1,82 @@
+html {
+    background-color: #0B0D17;
+}
+
+body {
+    font-family: 'Barlow', serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, #sh1 {
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 56px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5, #sh2, #sh3, nav {
+    font-family: 'Barlow condensed', serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+h5 {
+    color: #D0D6F9;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+}
+
+#sh2 {
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+}
+
+#line {
+    min-width: 75%;
+    color: red;
+}
+
+ol {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    counter-reset: nav-counter;
+    min-width: 25%;
+    backdrop-filter: blur(10px);
+}
+
+
+ol li {
+    counter-increment: nav-counter;
+    display: flex;
+}
+
+ol li::before{
+    content: "0" counter(nav-counter);
+    padding-right: 10px;
+    padding-left: 10px;
+}
