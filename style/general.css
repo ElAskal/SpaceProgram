@@ -1,7 +1,8 @@
 html {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #0B0D17;
-    margin-top: 40px;
-    margin-left: 55px;
 }
 
 body {
@@ -54,40 +55,42 @@ h5 {
 }
 
 nav {
-    width: 100%;
     display: inline-flex;
-    top: 40px;
-    left: 55px;
+    width: 100%;
+    margin-top: 40px;
     height: 96px;
-    gap: 17px;
+    position: rela;
 }
 
 nav > * { 
     margin-top: auto;
     margin-bottom: auto;
     display: inline-flex;
-    align-items: center;
-    text-align: center;
+    position: relative;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 nav img {
+    margin-left: 55px;
+    margin-right: 35px;
     max-height: 48px;
     max-width: 48px;
 }
 ol {
     font-family: 'Barlow Condensed', serif;
     font-style: normal;
+    line-height: normal;
     font-weight: 400;
     font-size: 16px;
     color: #FFF;
     letter-spacing: 2.7px;
     flex-wrap: wrap;
+    padding-left: 0px;
     height: 100%;
+    max-width: 830px;
     width: 100%;
     counter-reset: nav-counter;
     background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.774227142333984px);
 }
 
 
@@ -96,30 +99,155 @@ ol li {
     display: flex;
     height: 100%;
     align-items: center;
+    margin-right: 50px;
+}
+
+ol li:first-of-type{
+    margin-left: 15%;
 }
 
 ol li:first-of-type::before{
     counter-set: nav-counter;
-    margin-left: 85px;
 }
 
 ol li::before{
     content: "0" counter(nav-counter);
-    margin-left: 50px;
     margin-right: 12px;
     font-weight: bold;
 }
 
-ol > .nav-selected {
-    border-bottom-style: solid ;
+.nav-selected {
+    border-bottom-style: solid;
     border-bottom-width: 100%;
     border-bottom-color: #FFF;
 }
 
 #line {
+    position: relative;
     border-width: 17px;
-    width: 60%;
+    left: 30px;
+    flex-grow: 1;
     height: 1px;
     opacity: 0.2515;
+    flex-shrink: 0;
     background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);     
+}
+
+#mobileMenu {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+
+    nav {
+        margin-top: 0px;
+    }
+    
+    #line {
+        visibility: hidden;
+    }
+    
+
+    ol {
+        max-width: 450px;
+        font-size: 14px;
+        letter-spacing: 2.362px;
+    }
+    
+    ol li {
+        margin-right: 8%;
+    }   
+    
+    ol li:first-of-type {
+        margin-left: 10%;
+    }
+    ol li::before {
+        content: none;
+    }
+    
+}
+
+@media (max-width: 599px) {
+    
+    nav {
+        position: relative;
+        width: 100%;
+    }
+    ol li {
+   /*     display: none; */
+        margin-left: 12vw;
+        height: 16px;
+        top: 500px;
+        font-size: 16px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        margin-right: 0px;
+}
+
+ol li:first-of-type::before{
+    counter-set: nav-counter;
+}
+    
+    ol li:first-of-type {
+        margin-left: 12vw;
+    }
+
+ol li::before{
+    content: "0" counter(nav-counter);
+    font-weight: bold;
+}
+    ol {
+        padding-top: 15vh;
+        min-height: 100vh;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        flex-wrap: nowrap;
+        max-width: 67vw;
+        left: 33%;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+    }
+    
+    label > #mobileMenu {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        
+    }
+    
+    nav img {
+        margin-left: 24px;
+        max-height: 40px;
+        max-width: 40px;
+    }
+    
+    .nav-selected {
+        border-bottom-style: none;
+        border-right-style: solid;
+        border-right-width: 100%;
+        border-right-color: #FFF;
+    }
+    
+    #toggle {
+        display: none;
+    }
+    
+    #toggle:checked ~ ol {
+        display: flex;
+    }
+    
+    #toggle:checked ~ label>#mobileMenu {
+        content: url("../assets/shared/icon-close.svg");
+    }
+    
+    nav > * { 
+        box-shadow: none;
+        }
 }
