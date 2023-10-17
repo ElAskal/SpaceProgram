@@ -1,7 +1,4 @@
 html {
-    background-image: url(../assets/home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #0B0D17;
 }
 
@@ -11,6 +8,10 @@ body {
     color: #D0D6F9;
     font-weight: 400;
     min-width: 100vw;
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    font-style: normal;
     margin: 0px;
 }
 
@@ -90,6 +91,7 @@ ol {
     width: 100%;
     counter-reset: nav-counter;
     background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
 }
 
 
@@ -142,7 +144,28 @@ ol li::before{
 }
 
 @media (max-width: 1023px) {
-
+    
+    body {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    h1 {
+        line-height: 150px;
+    }
+    
+    h4 {
+        font-size: 32px;
+        font-synthesis: normal;
+        letter-spacing: 2px;
+    }
+    
+    h5 {
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: 3.375px;
+    }
+    
     nav {
         margin-top: 0px;
     }
@@ -173,10 +196,33 @@ ol li::before{
 
 @media (max-width: 599px) {
     
+    body {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
     nav {
         position: relative;
         width: 100%;
     }
+    
+    h1 {
+        line-height: 100px;
+        font-size: 80px;
+    }
+    
+    h4 {
+        font-size: 20px;
+        font-synthesis: normal;
+        letter-spacing: 1.25px;
+    }
+    
+    h5 {
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: 2.7px;
+    }
+    
     ol li {
    /*     display: none; */
         margin-left: 12vw;
@@ -210,7 +256,6 @@ ol li::before{
         max-width: 67vw;
         left: 33%;
         background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.774227142333984px);
     }
     
     label > #mobileMenu {
