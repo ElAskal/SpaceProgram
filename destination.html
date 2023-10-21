@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/destination.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-
     <nav>
-      <li>Home</li>
-      <li class="nav-selected">Destination</li>
-      <li>Crew</li>
-      <li>Technology</li>
+    <img src="assets/shared/logo.svg" alt="Logo"/>
+    <span id="line"></span>
+    <input type="checkbox" id="toggle"/>
+    <label for="toggle"><img id="mobileMenu" src="assets/shared/icon-hamburger.svg" alt="Menu"/></label>
+            <ol>
+                <a href="index.html"><li>Home</li></a>
+      <a href="destination.html" class="nav-selected"><li>Destination</li></a>
+      <a href="crew.html"><li>Crew</li></a>
+      <a href="technology.html"><li>Technology</li></a>
+    </ol>
     </nav>
 
   01 Pick your destination

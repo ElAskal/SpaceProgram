@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     font-style: normal;
     margin: 0px;
+    padding: 0px;
 }
 
 h1, h2, h3, h4, #sh1 {
@@ -94,27 +95,35 @@ ol {
     backdrop-filter: blur(40.774227142333984px);
 }
 
-
-ol li {
-    counter-increment: nav-counter;
-    display: flex;
-    height: 100%;
-    align-items: center;
+ol a {
     margin-right: 50px;
 }
 
-ol li:first-of-type{
+
+ol a li{
+    counter-increment: nav-counter;
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+ol a:first-of-type{
     margin-left: 15%;
 }
 
-ol li:first-of-type::before{
+ol a:first-of-type::before{
     counter-set: nav-counter;
 }
 
-ol li::before{
+ol a::before{
     content: "0" counter(nav-counter);
     margin-right: 12px;
     font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .nav-selected {
@@ -223,7 +232,7 @@ ol li::before{
         letter-spacing: 2.7px;
     }
     
-    ol li {
+    ol a{
    /*     display: none; */
         margin-left: 12vw;
         height: 16px;
@@ -234,15 +243,15 @@ ol li::before{
         margin-right: 0px;
 }
 
-ol li:first-of-type::before{
+ol a:first-of-type::before{
     counter-set: nav-counter;
 }
     
-    ol li:first-of-type {
+    ol a:first-of-type {
         margin-left: 12vw;
     }
 
-ol li::before{
+ol a::before{
     content: "0" counter(nav-counter);
     font-weight: bold;
 }
