@@ -1,1 +1,108 @@
 @import "general.css";
+
+html {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center center center;
+}
+
+.mainBody {
+    margin-bottom: 13.1vh;
+}
+
+input[type=radio] ~label {
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    box-shadow: none;
+    position: relative;
+    margin-right: 35px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + label {
+    border-bottom: 3px solid white;
+}
+
+input[type=radio]:hover + label {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+    margin-left: 11.5vw;
+    margin-right: auto;
+    height: 28px;
+    margin-bottom: 0px;
+    margin-top: 76px;
+}
+
+.planetDesc {
+    max-width: 444px;
+    width: 40%;
+    max-height: 472px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.planetDesc h5 {
+    margin-top: 9vh;
+    margin-bottom: 0px;
+}
+
+.planetBody {
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.planetFooter {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dist, .time {
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.planetPic {
+    width: 60%;
+    max-width: 550px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.planetPicImg {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.separator {
+    left: 0;
+    margin-bottom: 3vh;
+    
+}
+
+#planet-choice {
+    margin: 0px;
+    min-height: 35px;
+}
+
+.planetDesc h2 {
+    margin-bottom: 2vh;
+}

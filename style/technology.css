@@ -1,1 +1,103 @@
 @import "general.css";
+
+html {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center center center;
+}
+
+.mainBody {
+    margin-bottom: 10vh;
+}
+
+.techButtons, .techDesc, .techPic, .techSelected {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.techButtons {
+    justify-content: space-between;
+    height: 305px;
+    min-width: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.techDesc {
+    justify-content: center;
+    height: 100%;
+    width: 43%;
+    max-width: 470px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.techPic {
+    justify-content: center;
+    height: 100%;
+    width:  calc(35vw - 11.5vw);
+    display: inline-flex;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+}
+
+.techPicImg {
+    width: 35vw;
+    max-width: 515px;
+    margin-left: auto;
+}
+
+h5 {
+    margin-left: 11.5vw;
+    margin-right: auto;
+    height: 28px;
+    margin-bottom: 0px;
+    margin-top: 76px;
+}
+
+.techDesc .techSelected h3 {
+    margin-top: 11px;
+    margin-bottom: 17px;
+    line-height: 64px;
+    width: 100%;
+}
+
+.techButtons {
+    counter-reset: tech-counter;
+}
+
+.checkmark {
+    counter-increment: tech-counter;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.25);
+    font-size: 32px;
+    line-height: 80px;
+}
+
+.checkmark::before {
+    content: counter(tech-counter);
+}
+
+.buttons {
+    display: none;
+}
+
+.buttons:hover + label {
+    border: 1px solid white;
+}
+
+.buttons:checked + label {
+    border: 1px solid white;
+    background: white;
+    color: black;
+}

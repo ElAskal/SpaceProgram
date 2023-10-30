@@ -1,4 +1,4 @@
-@import "general.css";
+@import url("general.css");
 
 html {
     background-image: url(../assets/home/background-home-desktop.jpg);
@@ -7,24 +7,17 @@ html {
     background-position: center center center center;
 }
 
-
-#mainBody {
-    display: inline-flex;
-    flex-direction: row;
-    margin-left: 12vw;
-    margin-right: 12vw;
-    margin-top: 28vh;
-    justify-content: space-between;
-    max-width: 100%;
-    max-height: 100%;
+.mainBody {
+    margin-bottom: 14.5vh;
 }
+
 #mainText {
     max-width: 444px;
     display: inline-flex;
     padding-right: 0px;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+    margin-top: auto;
 }
 
 #mainText > * {
@@ -40,7 +33,6 @@ html {
 #button {
     width: 274px;
     height: 274px;
-    line-height: 274px;
     border-radius: 50%;
     text-align: center;
     background: #fff;
@@ -51,12 +43,12 @@ html {
     color: #000;
     margin-top: 0px;
     margin-bottom: 0px;
+    line-height: 274px;
 }
 
 #button:hover {
     box-shadow: 0px 0 0 88px rgba(255,255,255,0.1036);
 }
-
 
 @media (max-width: 1023px) {
 
@@ -74,7 +66,7 @@ html {
         flex-direction: column;
         display: inline-flex;
         flex-grow: 1;
-        min-width: 450px;
+        min-width: 59%;
     }
     
     #mainText, #mainText > h1{
@@ -95,9 +87,7 @@ html {
     #button:hover {
         box-shadow: 0px 0 0 66px rgba(255,255,255,0.1036);
     }
-    
 }
-
 @media (max-width: 599px) {
 
     html {
@@ -105,7 +95,7 @@ html {
     }
     
     #mainBody {
-        min-width: 327px;
+        min-width: 88%;
         margin-left: 6.4vw;
         margin-right: 6.4vw;
         margin-top: 8.7%;
@@ -129,4 +119,4 @@ html {
         box-shadow: 0px 0 0 50px rgba(255,255,255,0.1036);
     }
     
-}
+}    

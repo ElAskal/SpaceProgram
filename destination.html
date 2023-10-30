@@ -14,7 +14,7 @@
 <body>
     <nav>
     <img src="assets/shared/logo.svg" alt="Logo"/>
-    <span id="line"></span>
+    <span class="line"></span>
     <input type="checkbox" id="toggle"/>
     <label for="toggle"><img id="mobileMenu" src="assets/shared/icon-hamburger.svg" alt="Menu"/></label>
             <ol>
@@ -24,86 +24,110 @@
       <a href="technology.html"><li>Technology</li></a>
     </ol>
     </nav>
+    
 
-  01 Pick your destination
-
-  <nav id='planet-choice'>
-    <ul class="planet-selected">Moon</ul>
-    <ul>Mars</ul>
-    <ul>Europa</ul>
-    <ul>Titan</ul>
-  </nav>
+    <h5><span class="pageNmbr">01</span> Pick your destination</h5>
+  <div class="mainBody">
+        <div class="planetPic">
+            <img id="planet-img-0" class="planetPicImg" src="assets/destination/image-moon.png" />
+            <img id="planet-img-1" class="planetPicImg" src="assets/destination/image-mars.png" />
+            <img id="planet-img-2" class="planetPicImg" src="assets/destination/image-europa.png" />
+            <img id="planet-img-3" class="planetPicImg" src="assets/destination/image-titan.png" />
+        </div>
+      <div class="planetDesc">
+        <nav id='planet-choice'>
+                <input type="radio" id="planet-choice-1" class="buttons" name="planet" onChange="showChoice()" value="0" checked />
+                <label for="planet-choice-1" class="checkmark">Moon</label>
+                <input type="radio" id="planet-choice-2" class="buttons" name="planet" onChange="showChoice()" value="1"/>
+                <label for="planet-choice-2" class="checkmark">Mars</label>
+                <input type="radio" id="planet-choice-3" class="buttons" name="planet" onChange="showChoice()" value="2"/>
+                <label for="planet-choice-3" class="checkmark">Europa</label>
+                <input type="radio" id="planet-choice-4" class="buttons" name="planet" onChange="showChoice()" value="3"/>
+                <label for="planet-choice-4" class="checkmark">Jupiter</label>
+          </nav>
   
-  <div id="moon">
-    <h2>Moon</h2>
-
-      See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-      regain perspective and come back refreshed. While you’re there, take in some history 
-      by visiting the Luna 2 and Apollo 11 landing sites.
+          <div id="planet-desc-0" class="planetBody">
+              <h2>Moon</h2>
+              <p>
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+              regain perspective and come back refreshed. While you’re there, take in some history 
+              by visiting the Luna 2 and Apollo 11 landing sites.</p>
  
-      <span class="separator"></span>
-      <div class="dist">
-      <span class="subh2">Avg. distance</span>
-      <span class="subh1">384,400 km</span>
-      </div>
-      <div class="time">
-        <span class="subh2">Est. travel time</span>
-        <span class="subh1">3 days</span>
-      </div>
-  </div>
+              <span class="line separator"></span>
+              <div class="planetFooter">
+                  <div class="dist">
+                      <span class="subh2">Avg. distance</span>
+                      <span class="subh1">384,400 km</span>
+                  </div>
+                  <div class="time">
+                        <span class="subh2">Est. travel time</span>
+                        <span class="subh1">3 days</span>
+                  </div>
+              </div>
+        </div>
   
-  <div id="mars">
-    <h2>Mars</h2>
+          <div id="planet-desc-1" class="planetBody">
+              <h2>Mars</h2>
 
-          Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-          the tallest planetary mountain in our solar system. It’s two and a half times 
-          the size of Everest!
+              <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+              the tallest planetary mountain in our solar system. It’s two and a half times 
+              the size of Everest!</p>
       
-      <span class="separator"></span>
-      <div class="dist">
-      <span class="subh2">Avg. distance</span>
-      <span class="subh1">225 mil. km</span>
-      </div>
-      <div class="time">
-        <span class="subh2">Est. travel time</span>
-        <span class="subh1">9 months</span>
-      </div>
-  </div>
+              <span class="line separator"></span>
+              <div class="planetFooter">
+                  <div class="dist">
+                      <span class="subh2">Avg. distance</span>
+                      <span class="subh1">225 mil. km</span>
+                  </div>
+                  <div class="time">
+                        <span class="subh2">Est. travel time</span>
+                        <span class="subh1">9 months</span>
+                  </div>
+              </div>
+        </div>
   
-  <div id="europa">
-    <h2>Europa</h2>
-          The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-          winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-          ice skating, curling, hockey, or simple relaxation in your snug 
-          wintery cabin.
- 
-      <span class="separator"></span>
-      <div class="dist">
-      <span class="subh2">Avg. distance</span>
-      <span class="subh1">628 mil. km</span>
-      </div>
-      <div class="time">
-        <span class="subh2">Est. travel time</span>
-        <span class="subh1">3 years</span>
-      </div>
-  </div>
-  
-  <div id="titan">
-    <h2>Titan</h2>
+          <div id="planet-desc-2" class="planetBody">
+              <h2>Europa</h2>
+              
+              <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+              winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+              ice skating, curling, hockey, or simple relaxation in your snug 
+              wintery cabin.</p>
+      
+              <span class="line separator"></span>
+              <div class="planetFooter">
+                  <div class="dist">
+                      <span class="subh2">Avg. distance</span>
+                      <span class="subh1">628 mil. km</span>
+                  </div>
+                  <div class="time">
+                        <span class="subh2">Est. travel time</span>
+                        <span class="subh1">3 years</span>
+                  </div>
+              </div>
+        </div>
+          
+          <div id="planet-desc-3" class="planetBody">
+              <h2>Titan</h2>
 
-          The only moon known to have a dense atmosphere other than Earth, Titan 
-          is a home away from home (just a few hundred degrees colder!). As a 
-          bonus, you get striking views of the Rings of Saturn.
- 
-      <span class="separator"></span>
-      <div class="dist">
-      <span class="subh2">Avg. distance</span>
-      <span class="subh1">1.6 bil. km</span>
+              <p>The only moon known to have a dense atmosphere other than Earth, Titan 
+              is a home away from home (just a few hundred degrees colder!). As a 
+              bonus, you get striking views of the Rings of Saturn.</p>
+
+              <span class="line separator"></span>
+              <div class="planetFooter">
+                  <div class="dist">
+                      <span class="subh2">Avg. distance</span>
+                      <span class="subh1">1.6 bil. km</span>
+                  </div>
+                  <div class="time">
+                        <span class="subh2">Est. travel time</span>
+                        <span class="subh1">7 years</span>
+                  </div>
+              </div>
+        </div>
       </div>
-      <div class="time">
-        <span class="subh2">Est. travel time</span>
-        <span class="subh1">7 years</span>
-      </div>
-  </div>
+    </div>
+    <script src="script/script.js"></script>
 </body>
 </html>

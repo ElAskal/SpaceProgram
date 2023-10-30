@@ -14,13 +14,44 @@ body {
     font-style: normal;
     margin: 0px;
     padding: 0px;
+    line-height: 32px;
+    max-height: 100vh;
+    max-width: 100vw;
+    align-items: center;
+    overflow: hidden;
 }
 
-h1, h2, h3, h4, #sh1 {
+
+html > * {
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: 400;
+}
+
+.mainBody {
+    margin-top, margin-left, margin-right: auto;
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: 13vh;
+    width: 77vw;
+    max-height: 77vh;
+    justify-content: space-between;
+    max-width: 1440px;
+}
+
+.pageNmbr {
+    opacity: 0.25;
+    margin-right: 28px;
+}
+
+h1, h2, h3, h4, .subh1 {
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     color: #FFFFFF;
     font-weight: 400;
+    line-height: normal;
+    margin: 0px;
 }
 h1 {
     font-size: 150px;
@@ -38,29 +69,50 @@ h4 {
     font-size: 32px;
 }
 
-h5, #sh2, #sh3, nav {
+h5, .subh2, .subh3, nav {
     font-family: 'Barlow condensed', serif;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #D0D6F9;
     font-weight: 400;
 }
 
 h5 {
-    color: #D0D6F9;
     font-size: 28px;
     letter-spacing: 4.75px;
 }
 
-#sh2 {
+.subh1 {
+    font-size: 28px;
+}
+
+.subh2 {
     font-size: 14px;
     letter-spacing: 2.35px;
+}
+
+.subh3, nav {
+    font-size: 16px;
+    letter-spacing: 2.7px;    
 }
 
 nav {
     display: inline-flex;
     min-width: 100%;
     margin-top: 40px;
-    height: 96px;
+    height: 10vh;
+    min-height: 96px;
+    font-family: 'Barlow Condensed', serif;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+}
+
+
+
+p {
+    max-width: 444px;
+    margin: 0px;
+    max-height: 192px;
 }
 
 nav > * { 
@@ -78,11 +130,6 @@ nav img {
     max-width: 48px;
 }
 ol {
-    font-family: 'Barlow Condensed', serif;
-    font-style: normal;
-    line-height: normal;
-    font-weight: 400;
-    font-size: 16px;
     color: #FFF;
     letter-spacing: 2.7px;
     flex-wrap: wrap;
@@ -97,6 +144,7 @@ ol {
 
 ol a {
     margin-right: 50px;
+    border-bottom: 3px solid transparent;
 }
 
 
@@ -127,12 +175,10 @@ a {
 }
 
 .nav-selected {
-    border-bottom-style: solid;
-    border-bottom-width: 100%;
-    border-bottom-color: #FFF;
+    border-bottom: 3px solid white;
 }
 
-#line {
+.line {
     position: relative;
     border-width: 17px;
     left: 30px;
@@ -142,6 +188,7 @@ a {
     flex-shrink: 0;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);     
+    z-index: 1;
 }
 
 #mobileMenu {
@@ -179,7 +226,7 @@ a {
         margin-top: 0px;
     }
     
-    #line {
+    .line {
         visibility: hidden;
     }
     
@@ -190,14 +237,14 @@ a {
         letter-spacing: 2.362px;
     }
     
-    ol li {
+    ol a {
         margin-right: 8%;
     }   
     
-    ol li:first-of-type {
+    ol a:first-of-type {
         margin-left: 10%;
     }
-    ol li::before {
+    ol a::before {
         content: none;
     }
     
@@ -302,5 +349,5 @@ ol a::before{
     
     nav > * { 
         box-shadow: none;
-        }
+    }
 }
