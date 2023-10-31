@@ -7,13 +7,12 @@ html {
 
 .mainBody {
     margin-bottom: 0vh;
-    height: 77vh;
 }
 .pageNmbr {
     opacity: 0.25;
 }
 
-.crewDesc h5 {
+h5 {
     margin-top: 76px;
     margin-bottom: 0px;
 }
@@ -125,4 +124,40 @@ input[type=radio]:checked {
 
 input[type=radio]:checked::after {
     visibility: visible; 
+}
+
+@media (max-width: 1023px) {
+    
+    html {
+        background-image: linear-gradient(rgba(11,13,23,0.25),rgba(11,13,23,0.25)),
+                          url("../assets/crew/background-crew-tablet.jpg");
+    }
+    
+    .crewDesc {
+        height: 23vh;
+        text-align: center;
+        min-width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    h5 {
+        margin-top: 40px;
+    }
+    
+    .crewPic {
+        max-height: 50%;
+        margin-top: 0px;
+    }
+    
+    .crewPicImg {
+        top: 0px;
+        bottom: auto;
+    }
+
+    .crewDesc .selectedDesc h3 {
+        margin-top: 8px;
+        margin-bottom: 16px;
+        width: 457px;
+    }
 }

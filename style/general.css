@@ -209,20 +209,39 @@ a {
         line-height: 28px;
     }
     
+    .mainBody {
+        width: 100%;
+        align-self: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 5vh;
+        flex-direction: column;
+        display: inline-flex;
+    }
+    
+    p {
+        max-width: 100%;
+        max-height: 84px;
+        float: left;
+        clear: left;
+        overflow: hidden;
+    }
     h1 {
         line-height: 150px;
     }
+
+    h3 {
+        font-size: 40px;;
+    }
+
     
     h4 {
-        font-size: 32px;
-        font-synthesis: normal;
-        letter-spacing: 2px;
+        font-size: 24px;
     }
     
     h5 {
         font-size: 20px;
-        line-height: normal;
-        letter-spacing: 3.375px;
     }
     
     nav {
