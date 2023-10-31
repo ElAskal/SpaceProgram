@@ -1,10 +1,8 @@
 @import "general.css";
 
 html {
-    background-image: url(../assets/destination/background-destination-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center center center;
+    background-image: linear-gradient(rgba(11,13,23,0.25),rgba(11,13,23,0.25)),
+                      url(../assets/destination/background-destination-desktop.jpg);
 }
 
 .mainBody {

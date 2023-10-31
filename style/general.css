@@ -1,8 +1,12 @@
 html {
     background-color: #0B0D17;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center center center;
 }
 
-body {
+.container, body {
+    opacity: 1;
     font-family: 'Barlow', serif;
     font-size: 18px;
     color: #D0D6F9;
@@ -33,9 +37,8 @@ html > * {
     display: inline-flex;
     flex-direction: row;
     margin-top: auto;
-    margin-bottom: 13vh;
     width: 77vw;
-    max-height: 77vh;
+    height: 77vh;
     justify-content: space-between;
     max-width: 1440px;
 }
