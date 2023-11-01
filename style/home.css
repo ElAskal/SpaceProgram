@@ -5,11 +5,10 @@ html {
 }
 
 .mainBody {
-    margin-bottom: 14.5vh;
 }
 
 #mainText {
-    max-width: 444px;
+    width: 444px;
     display: inline-flex;
     padding-right: 0px;
     flex-direction: column;
@@ -54,22 +53,29 @@ html {
     }
     
     .mainBody {
-        flex-grow: 1;
-        min-width: 59%;
+        min-width: 100%;
+        margin-top: 10.35vh;
+        margin-bottom: 8.78vh;
     }
     
-    .mainText, #mainText > h1{
+    #mainText {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    
+    #mainText, #mainText > h1{
         text-align: center;
         align-items: center;
     }
     
-    #button {
-        min-height: 100%;
-    }
     
     #button {
         width: 242px;
         height: 242px;
+        line-height: 242px;
+    }
+
+    #button a h4 {
         line-height: 242px;
     }
     
@@ -91,8 +97,7 @@ html {
         margin-bottom: 7vh;
     }
 
-    .mainText > h1 {
-        margin-top: 16;
+    #mainText > h1 {
         margin-bottom: 16px;
     }
     

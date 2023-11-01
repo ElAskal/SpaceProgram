@@ -27,6 +27,7 @@
     
     <h5><span class="pageNmbr">03</span>Space Launch 101</h5>
     <div class="mainBody">
+        <div class="techBody">
             <div class="techButtons">
                     <input type="radio" id="tech-choice-1" class="buttons" name="tech" onChange="showChoice()" value="0" checked />
                     <label for="tech-choice-1" class="checkmark"></label>
@@ -38,15 +39,15 @@
 
             <div class="techDesc">
                 <span class="subh3">The terminology...</span>
-                <div id="tech-desc-0" class="techSelected">
+                <div class="tech-choice-0 techSelected">
                     <h3>Launch vehicle</h3>
                     <p>
                       A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
                       payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
                       WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-                      it's quite an awe-inspiring sight on the launch pad!
+                      it's quite an <nobr>awe-inspiring</nobr> sight on the launch pad!
                 </div>
-                <div id="tech-desc-1" class="techSelected">
+                <div class="tech-choice-1 techSelected">
                     <h3>Spaceport</h3>
                     <p>
                       A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
@@ -55,7 +56,7 @@
                       of the Earth’s rotation for launch.
                     </p>
                 </div>
-                <div id="tech-desc-2" class="techSelected">
+                <div class="tech-choice-2 techSelected">
                     <h3>Space capsule</h3>
                     <p>
                       A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
@@ -65,10 +66,16 @@
                     </p>
                 </div>
             </div>
-            <div class="techPic">        
-                <img id="tech-img-0" class="techPicImg" src="assets/technology/image-launch-vehicle-portrait.jpg" />
-                <img id="tech-img-1" class="techPicImg" src="assets/technology/image-spaceport-portrait.jpg" />
-                <img id="tech-img-2" class="techPicImg" src="assets/technology/image-space-capsule-portrait.jpg" />
+        </div>      
+            <div class="techPic portrait">        
+                <img class="tech-choice-0 techPicImg" src="assets/technology/image-launch-vehicle-portrait.jpg" />
+                <img class="tech-choice-1 techPicImg" src="assets/technology/image-spaceport-portrait.jpg" />
+                <img class="tech-choice-2 techPicImg" src="assets/technology/image-space-capsule-portrait.jpg" />
+            </div>      
+            <div class="techPic landscape">        
+                <img class="tech-choice-0 techPicImg" src="assets/technology/image-launch-vehicle-landscape.jpg" />
+                <img class="tech-choice-1 techPicImg" src="assets/technology/image-spaceport-landscape.jpg" />
+                <img class="tech-choice-2 techPicImg" src="assets/technology/image-space-capsule-landscape.jpg" />
             </div>
     </div>
     <script src="script/script.js"></script>

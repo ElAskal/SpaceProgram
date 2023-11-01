@@ -10,14 +10,20 @@ html {
 }
 
 input[type=radio] ~label {
-    line-height: 40px;
+    min-height: 46px;
     font-size: 16px;
     letter-spacing: 2.7px;
     box-shadow: none;
     position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: 35px;
     cursor: pointer;
     border-bottom: 3px solid transparent;
+}
+
+input[type=radio] ~label:last-of-type {
+    margin-right: 0px;
 }
 
 input[type=radio] {
@@ -49,11 +55,6 @@ h5 {
     margin-top: auto;
 }
 
-.planetDesc h5 {
-    margin-top: 9vh;
-    margin-bottom: 0px;
-}
-
 .planetBody {
     height: 100%;
     display: inline-flex;
@@ -76,15 +77,15 @@ h5 {
     height: auto;
     width: 50%;
     position: relative;
+    margin-top: auto;
     display: inline-flex;
     flex-direction: column;
-    flex-shrink: 0;
 }
 
 .planetPicImg {
-    max-width: 100%;
-    height: 100%;
     position: relative;
+    max-width: 100%;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
@@ -93,14 +94,18 @@ h5 {
 
 .separator {
     left: 0;
+    margin-top: 6vh;
     margin-bottom: 3vh;
+    max-height: 1px;
     
 }
 
 #planet-choice {
-    margin: 0px;
-    min-height: 35px;
+    min-height: 28px;
+    min-width: 0px;
     width: auto;
+    height: auto;
+    margin-bottom: 4.1vh;
 }
 
 .planetDesc h2 {
@@ -115,8 +120,8 @@ h5 {
     }
     .mainBody {
         flex-direction: column;
-        margin-bottom: 0vh;
-        margin-top: 0vh;
+        margin-bottom: 6.05vh;
+        width: 74.6vw;
     }
     
     h5 {
@@ -126,26 +131,39 @@ h5 {
     .planetDesc {
         align-content: center;
         text-align: center;
+        min-width: 100%;
+        margin-top: auto;
+        margin-bottom: 0px;
+    }
+    
+    .planetBody {
+        width: 100%;
     }
     
     .planetPic {
+        width: 51%;
     }
     
-    .planetPicImg {
-        max-width: 67%;
-        max-height: 67%;
-        margin: 0px;
+
+    input[type=radio] ~label {
+        min-height: 31px;
+    }
+
+    .planetDesc h2 {
+        margin-bottom: 0.78vh;
     }
     
-    .planetChoice label {
-        align-content: center;
-        align-items: center;
-        align-self: center;
-        text-align: center;
+    #planet-choice  {
+        margin-top: 5.2vh;
+        min-height: 31px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.8vh;
     }
+
     .separator {
-        left: 0;
         visibility: visible;
+        margin-top: 4.7vh;
+        margin-bottom: 2.7vh;
     }
-    
 }

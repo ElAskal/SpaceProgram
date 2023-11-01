@@ -1,5 +1,4 @@
-var img = "-img-";
-var desc = "-desc-";
+var choice = "-choice-";
 
 showChoice();
 
@@ -8,17 +7,18 @@ function showChoice() {
     var buttons = document.getElementsByClassName('buttons');
     var name = buttons[0].name;
 
-    for (var i = 0; i < buttons.length; i++) {
-        var imgId = name + img + i;
-        var descId = name + desc + i;
-        console.log(imgId);
-        console.log(descId);
+    for (var i = 0; i < buttons.length; i++)  {
+        var choiceId = name + choice + i;
+        console.log(choiceId);
+        var toModify =  document.getElementsByClassName(choiceId);
         if (buttons[i].checked) {
-            document.getElementById(imgId).style.display = "block";
-            document.getElementById(descId).style.display = "inline-flex";
+            for (var j = 0 ; j < toModify.length ; j++) {
+                toModify[j].style.display = "inline-flex";
+            }
         } else {
-            document.getElementById(imgId).style.display = "none";
-            document.getElementById(descId).style.display = "none";
+            for (var h = 0 ; h <toModify.length ; h++) {
+                toModify[h].style.display = "none";
+            }
         }
     }
 }

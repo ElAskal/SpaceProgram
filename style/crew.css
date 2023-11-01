@@ -5,9 +5,6 @@ html {
                       url("../assets/crew/background-crew-desktop.jpg");
 }
 
-.mainBody {
-    margin-bottom: 0vh;
-}
 .pageNmbr {
     opacity: 0.25;
 }
@@ -136,28 +133,44 @@ input[type=radio]:checked::after {
     .crewDesc {
         height: 23vh;
         text-align: center;
-        min-width: 100%;
         margin-top: 0px;
         margin-bottom: 0px;
+        min-width: 100%;
     }
     
     h5 {
         margin-top: 40px;
     }
     
+    p {
+        max-width: 593px;
+        text-wrap: balance;
+    }
+    
     .crewPic {
-        max-height: 50%;
-        margin-top: 0px;
+        min-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vh;
     }
     
     .crewPicImg {
-        top: 0px;
-        bottom: auto;
+        max-width: none;
+        width: auto;
+        max-height: 100%;
     }
 
     .crewDesc .selectedDesc h3 {
         margin-top: 8px;
         margin-bottom: 16px;
-        width: 457px;
+        width: 100%;
+    }
+    
+    input[type=radio] {
+        margin-right: 16px;
+    }
+    
+    input[type=radio]:last-of-type {
+        margin-right: 0px;
     }
 }

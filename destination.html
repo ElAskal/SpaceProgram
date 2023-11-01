@@ -29,13 +29,13 @@
     <h5><span class="pageNmbr">01</span> Pick your destination</h5>
   <div class="mainBody">
         <div class="planetPic">
-            <img id="planet-img-0" class="planetPicImg" src="assets/destination/image-moon.png" />
-            <img id="planet-img-1" class="planetPicImg" src="assets/destination/image-mars.png" />
-            <img id="planet-img-2" class="planetPicImg" src="assets/destination/image-europa.png" />
-            <img id="planet-img-3" class="planetPicImg" src="assets/destination/image-titan.png" />
+            <img class="planet-choice-0 planetPicImg" src="assets/destination/image-moon.png" />
+            <img class="planet-choice-1 planetPicImg" src="assets/destination/image-mars.png" />
+            <img class="planet-choice-2 planetPicImg" src="assets/destination/image-europa.png" />
+            <img class="planet-choice-3 planetPicImg" src="assets/destination/image-titan.png" />
         </div>
       <div class="planetDesc">
-        <nav id='planet-choice'>
+        <nav id="planet-choice">
                 <input type="radio" id="planet-choice-1" class="buttons" name="planet" onChange="showChoice()" value="0" checked />
                 <label for="planet-choice-1" class="checkmark">Moon</label>
                 <input type="radio" id="planet-choice-2" class="buttons" name="planet" onChange="showChoice()" value="1"/>
@@ -43,16 +43,16 @@
                 <input type="radio" id="planet-choice-3" class="buttons" name="planet" onChange="showChoice()" value="2"/>
                 <label for="planet-choice-3" class="checkmark">Europa</label>
                 <input type="radio" id="planet-choice-4" class="buttons" name="planet" onChange="showChoice()" value="3"/>
-                <label for="planet-choice-4" class="checkmark">Jupiter</label>
+                <label for="planet-choice-4" class="checkmark">Titan</label>
           </nav>
   
-          <div id="planet-desc-0" class="planetBody">
+          <div class="planet-choice-0 planetBody">
               <h2>Moon</h2>
               <p>
               See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
               regain perspective and come back refreshed. While you’re there, take in some history 
               by visiting the Luna 2 and Apollo 11 landing sites.</p>
- 
+
               <span class="line separator"></span>
               <div class="planetFooter">
                   <div class="dist">
@@ -66,7 +66,7 @@
               </div>
         </div>
   
-          <div id="planet-desc-1" class="planetBody">
+          <div class="planet-choice-1 planetBody">
               <h2>Mars</h2>
 
               <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
@@ -86,7 +86,7 @@
               </div>
         </div>
   
-          <div id="planet-desc-2" class="planetBody">
+          <div class="planet-choice-2 planetBody">
               <h2>Europa</h2>
               
               <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
@@ -107,7 +107,7 @@
               </div>
         </div>
           
-          <div id="planet-desc-3" class="planetBody">
+          <div class="planet-choice-3 planetBody">
               <h2>Titan</h2>
 
               <p>The only moon known to have a dense atmosphere other than Earth, Titan 

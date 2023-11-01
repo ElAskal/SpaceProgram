@@ -23,25 +23,29 @@ html {
     margin-bottom: auto;
 }
 
+.techBody {
+    display: inline-flex;
+    width: 60%;
+    justify-content: space-between;
+}
 
 .techDesc {
     justify-content: center;
-    height: 100%;
-    width: 43%;
+    height: auto;
+    width: 100%;
     max-width: 470px;
     margin-bottom: auto;
-    margin-top: auto;
+    margin-top: 15.2vh;
 }
 
 .techPic {
     justify-content: center;
     height: 100%;
-    width:  calc(35vw - 11.5vw);
+    width:  23.5vw;
     display: inline-flex;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
-    flex-shrink: 0;
 }
 
 .techPicImg {
@@ -71,11 +75,12 @@ h5 {
 
 .checkmark {
     counter-increment: tech-counter;
+    font-family: 'Bellefair';
     text-align: center;
     color: white;
     cursor: pointer;
     max-height: 80px;
-    max-width: 80px;
+    width: 80px;
     border-radius: 50%;
     border: 1px solid rgba(255,255,255,0.25);
     font-size: 32px;
@@ -89,7 +94,6 @@ h5 {
 .buttons {
     display: none;
 }
-
 .buttons:hover + label {
     border: 1px solid white;
 }
@@ -98,4 +102,96 @@ h5 {
     border: 1px solid white;
     background: white;
     color: black;
+}
+
+.landscape {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+
+html {
+    background-image: linear-gradient(rgba(11,13,23,0.25),rgba(11,13,23,0.25)),
+                      url(../assets/technology/background-technology-tablet.jpg);
+}
+    
+    .mainBody {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 5.85vh;
+        margin-bottom: 9.5vh;
+    }
+    
+    .portrait {
+        display: none;
+    }
+    
+    h5 {
+        margin-top: 40px;
+    }
+    
+    
+    .landscape {
+        display: inline-flex;
+        min-width: 100vw;
+    }
+    
+    .techBody {
+        flex-direction: column;
+        flex-grow: 1;
+        margin-top: 4.8vh;
+        height: auto;
+        width: 100%;
+        max-width: 458px;
+    }
+    
+    .techButtons {
+        height: auto;
+        flex-direction: row;
+        width: 212px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .techDesc {
+        margin-top: 0px;
+        max-width: 100%;
+        margin-bottom: auto;
+        height: auto;
+    }
+    
+    .techPic {
+        height: auto;
+        width: 100vw;
+        margin: 0px;
+    }
+    
+    .techPicImg {
+        min-width: 100%;
+        max-width: none;
+    }
+    
+    .checkmark {
+        max-height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 60px;
+    }
+    
+    .subh3 {
+        margin-top: 4.1vh;
+    }
+    
+    h3 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        height: 46px;
+    }
+     
+    p {
+        display: inline-block;
+    }
 }
