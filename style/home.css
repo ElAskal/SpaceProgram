@@ -5,7 +5,9 @@ html {
 }
 
 .mainBody {
+    margin-bottom: 17vh;
 }
+
 
 #mainText {
     width: 444px;
@@ -61,6 +63,7 @@ html {
     #mainText {
         margin-top: 0px;
         font-size: 16px;
+        width: 100%;
     }
     
     #mainText, #mainText > h1{
@@ -90,15 +93,18 @@ html {
     }
     
     .mainBody {
-        min-width: 88%;
-        margin-left: 6.4vw;
-        margin-right: 6.4vw;
-        margin-top: 8.7%;
-        margin-bottom: 7vh;
+        margin-top: 24px;
+        margin-bottom: 0px;
+        min-width: 87.2vw;
+    }
+    
+    #mainText {
+        font-size: 15px;
     }
 
     #mainText > h1 {
         margin-bottom: 16px;
+        margin-top: 16px;
     }
     
     
@@ -106,6 +112,10 @@ html {
     #button {
         width: 150px;
         height: 150px;
+        line-height: 150px;
+    }
+
+    #button a h4 {
         line-height: 150px;
     }
     

@@ -33,17 +33,16 @@ h5 {
     max-width: 445px;
     margin-top: 17vh;
     margin-bottom: 10.4vh;
-    z-index: 1;
 }
 
 .crewPic {
-    flex-grow: 1;
     justify-content: space-around;
     margin-top: auto;
-    max-height: inherit;
+    min-height: 100%;
     display: inline-flex;
     position: relative;
-    width:50vw; 
+    width:50vw;
+    max-width: 100%;
     margin-right: -11.5vw;
 }
 
@@ -75,8 +74,10 @@ h5 {
 
 .crewPicImg {
     position: absolute;
+    height:  auto;
     max-width: 100%;
     bottom: 0px;
+    z-index: -1;
 }
 
 .checkmark {
@@ -91,6 +92,9 @@ input[type=radio] {
     width: 15px;
     color: white;
     opacity: 0.174363;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-right: 24px;
 }
 
@@ -99,7 +103,11 @@ input[type=radio]::after {
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    position: absolute;
     background-color: white;
     content: '';
     display: inline-block;
@@ -149,15 +157,14 @@ input[type=radio]:checked::after {
     
     .crewPic {
         min-width: 100%;
+        min-height: 50vh;
         margin-left: auto;
         margin-right: auto;
         margin-top: 4vh;
     }
     
     .crewPicImg {
-        max-width: none;
-        width: auto;
-        max-height: 100%;
+        max-height: 50vh;
     }
 
     .crewDesc .selectedDesc h3 {
@@ -172,5 +179,66 @@ input[type=radio]:checked::after {
     
     input[type=radio]:last-of-type {
         margin-right: 0px;
+    }
+}
+
+@media(max-width: 599px) {
+    
+    html {
+        background-image: linear-gradient(rgba(11,13,23,0.25),rgba(11,13,23,0.25)),
+                          url(../assets/crew/background-crew-mobile.jpg);
+    }
+    
+    h5 {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mainBody {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        margin-bottom: 6.05vh;
+        width: 74.6vw;
+    }
+    
+    .crewDesc {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        flex-direction: column-reverse;
+        width: 87.2vw;
+    }
+    
+    .selectedDesc {
+        margin-top: 32px;
+    }
+    
+    .crewPic {
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+        margin-bottom: 32px;
+        margin-top: 32px;
+        height: 222px;
+        min-height: 0px;
+    }
+    
+    .crewPicImg {
+        max-height: 222px;
+    }
+    
+    p {
+        text-wrap: wrap;
+    }
+    
+    
+    input[type=radio] {
+        height: 10px;
+        width: 10px;
+    }
+
+    input[type=radio]::after {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
     }
 }

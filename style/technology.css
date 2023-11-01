@@ -62,7 +62,7 @@ h5 {
     margin-top: 76px;
 }
 
-.techDesc .techSelected h3 {
+h3 {
     margin-top: 11px;
     margin-bottom: 17px;
     line-height: 64px;
@@ -188,10 +188,71 @@ html {
     h3 {
         margin-top: 16px;
         margin-bottom: 16px;
-        height: 46px;
+        line-height: 46px;
     }
      
     p {
         display: inline-block;
+    }
+}
+
+@media (max-width: 599px) {
+    
+    html {
+        background-image: linear-gradient(rgba(11,13,23,0.25),rgba(11,13,23,0.25)),
+                          url(../assets/technology/background-technology-mobile.jpg);
+    }
+    
+    h5 {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mainBody {
+        margin-top: 32px;
+        width: 87.2vw;
+        margin-bottom: 0px;
+        justify-content: flex-end;
+    }
+    
+    .techBody {
+        margin-top: 34px;
+        justify-content: flex-start;
+    }
+    
+    .checkmark {
+        max-height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    
+    .subh3 {
+        margin-top: 0px;
+        margin-bottom: 9px;
+    }
+    
+    .mainBody .techBody .techDesc .techSelected h3 {
+        margin-top: 0px;
+        margin-bottom: 16px;
+        line-height: 24px;
+    }
+    
+    .techButtons {
+        max-width: 152px;
+    }
+    
+    .techDesc {
+        margin-top: 26px;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+    }
+    
+    .techSelected {
+       margin: 0px;
+        padding: 0px;
+        justify-content: space-between;
     }
 }
