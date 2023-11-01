@@ -211,7 +211,6 @@ a {
     
     .mainBody {
         min-height: 100%;
-        max-width: 444px;
         flex-direction: column;
         margin-bottom: 0px;
         margin-top: 6.4vh;
