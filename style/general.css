@@ -211,6 +211,7 @@ a {
     
     .mainBody {
         min-height: 100%;
+        max-width: 444px;
         flex-direction: column;
         margin-bottom: 0px;
         margin-top: 6.4vh;
@@ -247,6 +248,11 @@ a {
     
     h5 {
         font-size: 20px;
+    }
+
+    .pageNmbr {
+        opacity: 0.25;
+        margin-right: 18px;
     }
     
     nav {
